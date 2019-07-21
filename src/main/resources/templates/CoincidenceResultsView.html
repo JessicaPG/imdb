@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Coincidence Results</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>COINCIDENCE</h1>
+<table>
+    <thead>
+    <tr>
+        <th> Title </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${listMovies.empty}">
+        <td colspan="1"> No Movies Available </td>
+    </tr>
+    <tr th:each="movie : ${listMovies}">
+        <td><span th:text="${listMovies}"> Title </span></td>
+    </tr>
+    </tbody>
+</table>
+<a href="/">Go Home</a>
+</body>
+</html>

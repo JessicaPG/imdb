@@ -1,0 +1,7 @@
+.inner-wrapper {
+    display:table-cell;
+    vertical-align:middle;
+    padding:15px;
+    float: left;
+    margin: 25px 150px;
+}

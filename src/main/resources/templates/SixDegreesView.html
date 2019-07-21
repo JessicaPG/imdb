@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Degree of separation</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<div class="jumbotron text-center">
+    <h1>Query 3: Degrees of Separation</h1>
+    <p>Six degrees of Kevin Bacon: Given a query by the user, you must provide what’s the degree of
+        separation between the person (e.g. actor or actress) the user has entered and Kevin Bacon.</p>
+</div>
+
+<div class="inner-wrapper">
+    <p>The format of the actor/actress's name shoud be Surname, Name
+        like for example --> Jasin, Blair</p>
+    <br>
+    <form action="/SixDegreesResultsView">
+        Name actor/actress:
+        <br>
+        <input type="text" name="name" value="">
+        <br>
+        <br>
+        <input type="Submit">
+    </form>
+</div>
+
+</body>
+</html>

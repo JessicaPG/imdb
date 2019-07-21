@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>IMDB LUNATECH TEST</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+    <h1>IMDB LUNATECH TEST</h1>
+    <p>Please select one of the following options</p>
+</div>
+
+<div class="inner-wrapper">
+    <form>
+        <input type="button" value="Query 1: Typecasting actors   " onclick="window.location.href='/TypecastingView'" />
+    </form>
+    <br>
+    <form>
+        <input type="button" value="Query 2: Find the coincidence" onclick="window.location.href='/CoincidenceView'" />
+    </form>
+    <br>
+    <form>
+        <input type="button" value="Query 3: Degree of separation" onclick="window.location.href='/SixDegreesView'" />
+    </form>
+</div>
+</body>
+</html>
